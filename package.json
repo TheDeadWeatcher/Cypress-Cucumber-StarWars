@@ -1,0 +1,14 @@
+{
+  "name": "cypress-cucumber-starwars",
+  "version": "1.0.0",
+  "description": "E2E automated test using BDD - cucumber ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Bartosz Jasyk",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^12.15.0"
+  }
+}
