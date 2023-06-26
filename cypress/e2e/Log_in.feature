@@ -6,4 +6,5 @@ Feature: StarWars - Sign in
         And I type e-mail adress
         And I click on continue button
         And I type password
-        Then
+        And I click on the Sign in button
+        Then Should be present my name next to login icon

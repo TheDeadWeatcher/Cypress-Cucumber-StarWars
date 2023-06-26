@@ -6,6 +6,13 @@ import createEsbuildPlugin from '@badeball/cypress-cucumber-preprocessor/esbuild
 export default defineConfig({
   e2e: {
     specPattern: '**/*.feature',
+    baseUrl: 'https://www.starwars.com/',
+    includeShadowDom: true,
+    viewportHeight: 1080,
+    viewportWidth: 1920,
+    chromeWebSecurity: false,
+    hideXHRInCommandLog: true,
+
     async setupNodeEvents(
       on: Cypress.PluginEvents,
       config: Cypress.PluginConfigOptions
