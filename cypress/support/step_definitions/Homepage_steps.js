@@ -9,6 +9,13 @@ When('I click on the sign in button', () => {
 });
 
 When('I type e-mail adress', () => {
+  // iframe - we can use extession or custom commands with alias
+
+  // cy.get('#oneid-iframe').then(($iframe) => {
+  //   const body = $iframe.contents().find('body');
+  //   cy.wrap(body).as('iframe');
+  //   cy.get('@iframe').find('#InputIdentityFlowValue').should('be.visible').type('jasyk');
+  // });
   cy.frameLoaded('#oneid-iframe');
   cy.iframe('#oneid-iframe').find('#InputIdentityFlowValue').should('be.visible').type('jasykbartosz@gmail.com');
 });
